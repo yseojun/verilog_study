@@ -18,3 +18,5 @@ Design_C_A u_C_A_2(
 	clk, rstn, in_a, out_a
 	
 );
+
+endmodule
