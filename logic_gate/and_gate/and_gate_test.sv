@@ -12,9 +12,9 @@ module tb_logic_gates();
   
   initial begin
     #0 in_a = 1'b0; in_b = 1'b0;
-    #10 in = 1'b1; in_b = 1'b0;
-    #10 in = 1'b0; in_b = 1'b1;
-    #10 in = 1'b1; in_b = 1'b1;
+    #10 in_a = 1'b1; in_b = 1'b0;
+    #10 in_a = 1'b0; in_b = 1'b1;
+    #10 in_a = 1'b1; in_b = 1'b1;
   end
   
   initial begin

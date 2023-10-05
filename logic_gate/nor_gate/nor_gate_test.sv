@@ -1,19 +1,20 @@
 module tb_logic_gates();
   
-  reg in;
+  reg in_a;
+  reg in_b;
   wire out;
   
-  not_gate u_not_gate(
-    .in(in),
+  nor_gate u_nor_gate(
+    .in_a(in_a),
+    .in_b(in_b),
     .out(out)
   );
   
   initial begin
-    #0 in = 1'b0;
-    #10 in = 1'b1;
-    #10 in = 1'b0;
-    #10 in = 1'b0;
-    #10 in = 1'b1;
+    #0 in_a = 1'b0; in_b = 1'b0;
+    #10 in_a = 1'b1; in_b = 1'b0;
+    #10 in_a = 1'b0; in_b = 1'b1;
+    #10 in_a = 1'b1; in_b = 1'b1;
   end
   
   initial begin

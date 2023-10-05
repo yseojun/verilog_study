@@ -1,9 +1,9 @@
 module or_gate(
-	input in_a;
-	input in_b;
-	output out;
+	input in_a,
+	input in_b,
+	output out
 );
 
-	// assign out = ~(in_a && in_b);
+	assign out = in_a || in_b;
 
 endmodule
