@@ -4,6 +4,6 @@ module and_gate(
 	output out
 );
 
-	assign out = in_a && in_b;
+	assign out = in_a & in_b; // bitwise
 
 endmodule
